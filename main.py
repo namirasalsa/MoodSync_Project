@@ -25,49 +25,49 @@ def make_prediction(input_data):
 
 # Define the questions dictionary outside the main function
 questions = {
-    'emmosi pertama: angry': [
+    'emosi ke-1: Angry': [
         '1. Seberapa sering Anda merasa kesal atau mudah marah?',
         '2. Seberapa sering Anda merasa mudah tersinggung oleh hal-hal kecil?',
         '3. Seberapa sering Anda merasa ingin melukai diri sendiri atau orang lain?',
         '4. Seberapa sering Anda merasa ingin berteriak atau membanting barang?',
         '5. Seberapa sering Anda merasa sulit untuk mengendalikan amarah Anda?'
     ],
-    'fear': [
+    'emosi ke-2: Fear': [
         '1. Seberapa sering Anda merasa gugup tentang sesuatu yang buruk yang akan terjadi pada Anda atau orang yang Anda cintai?',
         '2. Seberapa sering Anda menghindari tempat atau situasi karena Anda merasa itu mungkin menyebabkan Anda stres atau panik?',
         '3. Seberapa sering Anda merasa tiba-tiba ketakutan, mengkhawatirkan tentang hal-hal yang tampaknya tidak dikhawatirkan oleh orang lain & tanpa alasan yang jelas?',
         '4. Seberapa sering pikiran Anda dipenuhi oleh ketakutan yang Anda tahu tidak rasional?',
         '5. Seberapa sering Anda mengalami gejala fisik (seperti berkeringat, gemetar) ketika Anda takut?'
     ],
-    'disgust': [
+    'emosi ke-3: Disgust': [
         '1. Seberapa sering Anda merasa jijik ketika memikirkan kejadian masa lalu tertentu?',
         '2. Seberapa sering Anda menghindari makanan, tempat, atau pengalaman tertentu karena membuat Anda merasa mual atau jijik?',
         '3. Seberapa sering Anda merasa sangat jijik atau muak terhadap sesuatu yang tampaknya tidak mengganggu orang lain?',
         '4. Seberapa sering rasa jijik Anda membuat Anda ingin segera meninggalkan suatu tempat atau situasi?',
         '5. Seberapa sering Anda merasakan rasa muak yang mempengaruhi suasana hati atau nafsu makan Anda?'
     ],
-    'happy': [
+    'emosi ke-4: Happy': [
         '1. Seberapa sering Anda merasa bahagia dan puas?',
         '2. Seberapa sering Anda merasa bersyukur atas apa yang Anda miliki?',
         '3. Seberapa sering Anda merasa optimis dan bersemangat?',
         '4. Seberapa sering Anda merasa tertarik pada hal-hal baru?',
         '5. Seberapa sering Anda merasa memiliki tujuan hidup?'
     ],
-    'nutral': [
+    'emosi ke-5: Nutral': [
         '1. Seberapa sering Anda merasa datar atau tidak ada emosi?',
         '2. Seberapa sering Anda merasa tidak peduli dengan apa yang terjadi di sekitar Anda?',
         '3. Seberapa sering Anda merasa sulit untuk merasakan kebahagiaan atau kesedihan?',
         '4. Seberapa sering Anda merasa sulit untuk membuat keputusan?',
         '5. Seberapa sering Anda merasa lelah atau tidak memiliki energi?'
     ],
-    'sad': [
+    'emosi ke-6: Sad': [
         '1. Seberapa sering Anda merasa sedih atau tertekan?',
         '2. Seberapa sering Anda menangis atau merasa ingin menangis?',
         '3. Seberapa sering Anda merasa putus asa atau tidak berdaya?',
         '4. Seberapa sering Anda kehilangan minat pada hal-hal yang biasa Anda sukai?',
         '5. Seberapa sering Anda merasa terpisah dari orang lain?'
     ],
-    'surprise': [
+    'emosi ke-7: Surprise': [
         '1. Seberapa sering Anda merasa terkejut atau kaget?',
         '2. Seberapa sering Anda merasa mudah marah atau kesal?',
         '3. Seberapa sering Anda merasa sulit untuk bereaksi terhadap situasi yang mengejutkan?',
