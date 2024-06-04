@@ -26,11 +26,11 @@ def make_prediction(input_data):
 # Define the questions dictionary outside the main function
 questions = {
     'angry': [
-        '1. Seberapa sering Anda merasa kesal atau mudah marah?',
-        '2. Seberapa sering Anda merasa mudah tersinggung oleh hal-hal kecil?',
-        '3. Seberapa sering Anda merasa ingin melukai diri sendiri atau orang lain?',
-        '4. Seberapa sering Anda merasa ingin berteriak atau membanting barang?',
-        '5. Seberapa sering Anda merasa sulit untuk mengendalikan amarah Anda?'
+        ' 1. Seberapa sering Anda merasa kesal atau mudah marah?',
+        ' 2. Seberapa sering Anda merasa mudah tersinggung oleh hal-hal kecil?',
+        ' 3. Seberapa sering Anda merasa ingin melukai diri sendiri atau orang lain?',
+        ' 4. Seberapa sering Anda merasa ingin berteriak atau membanting barang?',
+        ' 5. Seberapa sering Anda merasa sulit untuk mengendalikan amarah Anda?'
     ],
     'fear': [
         '1. Seberapa sering Anda merasa gugup tentang sesuatu yang buruk yang akan terjadi pada Anda atau orang yang Anda cintai?',
@@ -68,7 +68,7 @@ questions = {
         '5. Seberapa sering Anda merasa terpisah dari orang lain?'
     ],
     'surprise': [
-        '1. Seberapa sering Anda merasa terkejut atau kagettttttt?',
+        '1. Seberapa sering Anda merasa terkejut atau kaget?',
         '2. Seberapa sering Anda merasa mudah marah atau kesal?',
         '3. Seberapa sering Anda merasa sulit untuk bereaksi terhadap situasi yang mengejutkan?',
         '4. Seberapa sering Anda merasa cemas atau gelisah setelah mengalami sesuatu yang mengejutkan?',
