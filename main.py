@@ -103,6 +103,7 @@ def main():
                 emotion_scores = {feature: sum(scores) for feature, scores in input_data.items()}
                 emotion_scores_df = pd.DataFrame(list(emotion_scores.items()), columns=['Emotion', 'Score']).set_index('Emotion')
 
+                st.subheader('Grafik Emosi:')
                 # Plot radar chart
                 fig = px.line_polar(emotion_scores_df.reset_index(), r='Score', theta='Emotion', line_close=True)
                 fig.update_traces(fill='toself')

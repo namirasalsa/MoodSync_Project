@@ -1,18 +1,3 @@
-# import streamlit as st
-
-# def show_homepage(questions):
-#     st.image("poto1.png")
-#     st.image("poto2.png")
-#     st.image("poto3.png")
-#     st.image("poto4.png")
-#     if st.button('Coba Sekarang'):
-#         with st.spinner('Loading...'):
-#             st.session_state.start = True
-#             st.session_state.input_data = {feature: [] for feature in questions.keys()}
-#             st.experimental_rerun()
-        
-#     return 'start' in st.session_state and st.session_state.start
-
 import time
 import streamlit as st
 
