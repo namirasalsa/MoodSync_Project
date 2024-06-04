@@ -209,8 +209,8 @@ def main():
             options = ['Tidak Pernah', 'Sesekali', 'Sering']
             for i, question in enumerate(question_list):
                 question_text = f'{i + 1}. {question}'
-                st.markdown(f'<p style="color:black;">{question_text}</p>', unsafe_allow_html=True)
-                answer = st.radio("", options=options, key=f'{attribute}_{i}')
+                st.markdown(f'<p style="color:black;margin-bottom:0;">{question_text}</p>', unsafe_allow_html=True)
+                answer = st.radio("", options=options, key=f'{attribute}_{i}', label_visibility="collapsed")
                 weight = {'Tidak Pernah': 0, 'Sesekali': 1, 'Sering': 2}
                 if len(input_data[attribute]) <= i:
                     input_data[attribute].append(weight[answer])
