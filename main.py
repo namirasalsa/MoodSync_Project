@@ -25,54 +25,54 @@ def make_prediction(input_data):
 
 # Define the questions dictionary outside the main function
 questions = {
-    'angry': [
-        'Seberapa sering Anda merasa kesal atau mudah marah?',
-        'Seberapa sering Anda merasa mudah tersinggung oleh hal-hal kecil?',
-        'Seberapa sering Anda merasa ingin melukai diri sendiri atau orang lain?',
-        'Seberapa sering Anda merasa ingin berteriak atau membanting barang?',
-        'Seberapa sering Anda merasa sulit untuk mengendalikan amarah Anda?'
+    'emmosi pertama: angry': [
+        '1. Seberapa sering Anda merasa kesal atau mudah marah?',
+        '2. Seberapa sering Anda merasa mudah tersinggung oleh hal-hal kecil?',
+        '3. Seberapa sering Anda merasa ingin melukai diri sendiri atau orang lain?',
+        '4. Seberapa sering Anda merasa ingin berteriak atau membanting barang?',
+        '5. Seberapa sering Anda merasa sulit untuk mengendalikan amarah Anda?'
     ],
     'fear': [
-        'Seberapa sering Anda merasa gugup tentang sesuatu yang buruk yang akan terjadi pada Anda atau orang yang Anda cintai?',
-        'Seberapa sering Anda menghindari tempat atau situasi karena Anda merasa itu mungkin menyebabkan Anda stres atau panik?',
-        'Seberapa sering Anda merasa tiba-tiba ketakutan, mengkhawatirkan tentang hal-hal yang tampaknya tidak dikhawatirkan oleh orang lain & tanpa alasan yang jelas?',
-        'Seberapa sering pikiran Anda dipenuhi oleh ketakutan yang Anda tahu tidak rasional?',
-        'Seberapa sering Anda mengalami gejala fisik (seperti berkeringat, gemetar) ketika Anda takut?'
+        '1. Seberapa sering Anda merasa gugup tentang sesuatu yang buruk yang akan terjadi pada Anda atau orang yang Anda cintai?',
+        '2. Seberapa sering Anda menghindari tempat atau situasi karena Anda merasa itu mungkin menyebabkan Anda stres atau panik?',
+        '3. Seberapa sering Anda merasa tiba-tiba ketakutan, mengkhawatirkan tentang hal-hal yang tampaknya tidak dikhawatirkan oleh orang lain & tanpa alasan yang jelas?',
+        '4. Seberapa sering pikiran Anda dipenuhi oleh ketakutan yang Anda tahu tidak rasional?',
+        '5. Seberapa sering Anda mengalami gejala fisik (seperti berkeringat, gemetar) ketika Anda takut?'
     ],
     'disgust': [
-        'Seberapa sering Anda merasa jijik ketika memikirkan kejadian masa lalu tertentu?',
-        'Seberapa sering Anda menghindari makanan, tempat, atau pengalaman tertentu karena membuat Anda merasa mual atau jijik?',
-        'Seberapa sering Anda merasa sangat jijik atau muak terhadap sesuatu yang tampaknya tidak mengganggu orang lain?',
-        'Seberapa sering rasa jijik Anda membuat Anda ingin segera meninggalkan suatu tempat atau situasi?',
-        'Seberapa sering Anda merasakan rasa muak yang mempengaruhi suasana hati atau nafsu makan Anda?'
+        '1. Seberapa sering Anda merasa jijik ketika memikirkan kejadian masa lalu tertentu?',
+        '2. Seberapa sering Anda menghindari makanan, tempat, atau pengalaman tertentu karena membuat Anda merasa mual atau jijik?',
+        '3. Seberapa sering Anda merasa sangat jijik atau muak terhadap sesuatu yang tampaknya tidak mengganggu orang lain?',
+        '4. Seberapa sering rasa jijik Anda membuat Anda ingin segera meninggalkan suatu tempat atau situasi?',
+        '5. Seberapa sering Anda merasakan rasa muak yang mempengaruhi suasana hati atau nafsu makan Anda?'
     ],
     'happy': [
-        'Seberapa sering Anda merasa bahagia dan puas?',
-        'Seberapa sering Anda merasa bersyukur atas apa yang Anda miliki?',
-        'Seberapa sering Anda merasa optimis dan bersemangat?',
-        'Seberapa sering Anda merasa tertarik pada hal-hal baru?',
-        'Seberapa sering Anda merasa memiliki tujuan hidup?'
+        '1. Seberapa sering Anda merasa bahagia dan puas?',
+        '2. Seberapa sering Anda merasa bersyukur atas apa yang Anda miliki?',
+        '3. Seberapa sering Anda merasa optimis dan bersemangat?',
+        '4. Seberapa sering Anda merasa tertarik pada hal-hal baru?',
+        '5. Seberapa sering Anda merasa memiliki tujuan hidup?'
     ],
     'nutral': [
-        'Seberapa sering Anda merasa datar atau tidak ada emosi?',
-        'Seberapa sering Anda merasa tidak peduli dengan apa yang terjadi di sekitar Anda?',
-        'Seberapa sering Anda merasa sulit untuk merasakan kebahagiaan atau kesedihan?',
-        'Seberapa sering Anda merasa sulit untuk membuat keputusan?',
-        'Seberapa sering Anda merasa lelah atau tidak memiliki energi?'
+        '1. Seberapa sering Anda merasa datar atau tidak ada emosi?',
+        '2. Seberapa sering Anda merasa tidak peduli dengan apa yang terjadi di sekitar Anda?',
+        '3. Seberapa sering Anda merasa sulit untuk merasakan kebahagiaan atau kesedihan?',
+        '4. Seberapa sering Anda merasa sulit untuk membuat keputusan?',
+        '5. Seberapa sering Anda merasa lelah atau tidak memiliki energi?'
     ],
     'sad': [
-        'Seberapa sering Anda merasa sedih atau tertekan?',
-        'Seberapa sering Anda menangis atau merasa ingin menangis?',
-        'Seberapa sering Anda merasa putus asa atau tidak berdaya?',
-        'Seberapa sering Anda kehilangan minat pada hal-hal yang biasa Anda sukai?',
-        'Seberapa sering Anda merasa terpisah dari orang lain?'
+        '1. Seberapa sering Anda merasa sedih atau tertekan?',
+        '2. Seberapa sering Anda menangis atau merasa ingin menangis?',
+        '3. Seberapa sering Anda merasa putus asa atau tidak berdaya?',
+        '4. Seberapa sering Anda kehilangan minat pada hal-hal yang biasa Anda sukai?',
+        '5. Seberapa sering Anda merasa terpisah dari orang lain?'
     ],
     'surprise': [
-        'Seberapa sering Anda merasa terkejut atau kaget?',
-        'Seberapa sering Anda merasa mudah marah atau kesal?',
-        'Seberapa sering Anda merasa sulit untuk bereaksi terhadap situasi yang mengejutkan?',
-        'Seberapa sering Anda merasa cemas atau gelisah setelah mengalami sesuatu yang mengejutkan?',
-        'Seberapa sering Anda merasa mudah tersentak atau ketakutan?'
+        '1. Seberapa sering Anda merasa terkejut atau kaget?',
+        '2. Seberapa sering Anda merasa mudah marah atau kesal?',
+        '3. Seberapa sering Anda merasa sulit untuk bereaksi terhadap situasi yang mengejutkan?',
+        '4. Seberapa sering Anda merasa cemas atau gelisah setelah mengalami sesuatu yang mengejutkan?',
+        '5. Seberapa sering Anda merasa mudah tersentak atau ketakutan?'
     ]
 }
 
