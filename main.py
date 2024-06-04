@@ -137,6 +137,7 @@ model.load_model('saved model/catboost_newModel')
 
 # Function to preprocess input data
 def preprocess_input(data):
+    # Menentukan nama fitur yang sesuai dengan yang diharapkan oleh model
     feature_names = ['angry', 'fear', 'disgust', 'happy', 'nutral', 'sad', 'surprise']
     processed_data = {feature: sum(data[feature]) for feature in feature_names}
     processed_data = pd.DataFrame([processed_data])
