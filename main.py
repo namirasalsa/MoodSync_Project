@@ -137,6 +137,7 @@ model.load_model('saved model/catboost_newModel')
 
 # Function to preprocess input data
 def preprocess_input(data):
+    # Menentukan nama fitur yang sesuai dengan yang diharapkan oleh model
     feature_names = ['angry', 'fear', 'disgust', 'happy', 'nutral', 'sad', 'surprise']
     processed_data = {feature: sum(data[feature]) for feature in feature_names}
     processed_data = pd.DataFrame([processed_data])
@@ -207,8 +208,9 @@ def main():
             st.subheader(attribute.capitalize())
             options = ['Tidak Pernah', 'Sesekali', 'Sering']
             for i, question in enumerate(question_list):
-                question_text = f'<p style="color:black;">{i + 1}. {question}</p>'
-                answer = st.radio(question_text, options=options, key=f'{attribute}_{i}', format_func=lambda x: f'<span style="color:black;">{x}</span>')
+                question_text = f'{i + 1}. {question}'
+                st.markdown(f'<p style="color:black;">{question_text}</p>', unsafe_allow_html=True)
+                answer = st.radio("", options=options, key=f'{attribute}_{i}')
                 weight = {'Tidak Pernah': 0, 'Sesekali': 1, 'Sering': 2}
                 if len(input_data[attribute]) <= i:
                     input_data[attribute].append(weight[answer])
